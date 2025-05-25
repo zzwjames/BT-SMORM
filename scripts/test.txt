@@ -1,0 +1,1298 @@
+60917
+=== BT Sample ===
+Chosen:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Here's a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea:
+
+#include <iostream>
+#include <string>
+#include <set>
+#include <map>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    // store countries and their bordering seas in a map
+    map<string, set<string>> countries;
+    countries["Algeria"] = {"Mediterranean Sea", "North African Coast"};
+    countries["France"] = {"Mediterranean Sea", "English Channel"};
+    countries["Italy"] = {"Mediterranean Sea", "Adriatic Sea"};
+    countries["Malta"] = {"Mediterranean Sea", "North African Coast"};
+    countries["Spain"] = {"Mediterranean Sea", "Atlantic Ocean"};
+    countries["Tunisia"] = {"Mediterranean Sea", "North African Coast"};
+
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+
+    // check if country is in the map
+    if (countries.find(country)!= countries.end()) {
+        // check if country borders the Mediterranean Sea
+        set<string> borders = countries.at(country);
+        if (borders.find("Mediterranean Sea")!= borders.end()) {
+            cout << country << " borders the Mediterranean Sea." << endl;
+        } else {
+            cout << country << " does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << country << " is not a recognized country." << endl;
+    }
+
+    return 0;
+}
+
+In this program, we first define a map called countries that stores each country's name as a key and a set of its surrounding seas as the value. We use a set to store each sea name so that we can easily check if a country borders a certain sea.
+
+We then present the user with a prompt to enter the name of a country. We use a while loop to ensure that the user enters a valid country name. We check if the country is in the map, and if so, we retrieve its bordering seas from the map.
+
+Finally, we check if the Mediterranean Sea is among the set of borders. If it is, we inform the user that the country borders the Mediterranean Sea. If not, we inform the user that the country does not border the Mediterranean Sea.
+
+Rejected:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Sure, here is the program using the C++11 algorithm "cds::algorithm::GreaterEqual":
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <cctype>
+
+using namespace std;
+
+int main() {
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    std::vector<string> vec;
+    vec.push_back(country);
+    size_t index = std::find_if(vec.begin(), vec.end(), [](const string& s) {
+        return std::any_of(s.begin(), s.end(), [](const char& c) {
+            return c == '}}';
+    });
+    if (index!= vec.end()) {
+        if ((*index)[0] == 'M') {
+            cout << "Country is bordered by the Mediterranean Sea." << endl;
+        } else {
+            cout << "Country does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << "Country is not found." << endl;
+    }
+    return 0;
+}
+
+=== Regression Sample ===
+Decoded Text:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    if (endsWith(country, "Mediterranean")) {
+        cout << "Yes, the country " << country
+             << " borders the Mediterranean Sea.";
+    } else {
+        cout << "No, the country " << country
+             << " does not border the Mediterranean Sea.";
+    }
+    return 0;
+}
+Target Attributes:
+tensor([1., 1., 1., 2.])
+60917
+=== BT Sample ===
+Chosen:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Here's a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea:
+
+#include <iostream>
+#include <string>
+#include <set>
+#include <map>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    // store countries and their bordering seas in a map
+    map<string, set<string>> countries;
+    countries["Algeria"] = {"Mediterranean Sea", "North African Coast"};
+    countries["France"] = {"Mediterranean Sea", "English Channel"};
+    countries["Italy"] = {"Mediterranean Sea", "Adriatic Sea"};
+    countries["Malta"] = {"Mediterranean Sea", "North African Coast"};
+    countries["Spain"] = {"Mediterranean Sea", "Atlantic Ocean"};
+    countries["Tunisia"] = {"Mediterranean Sea", "North African Coast"};
+
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+
+    // check if country is in the map
+    if (countries.find(country)!= countries.end()) {
+        // check if country borders the Mediterranean Sea
+        set<string> borders = countries.at(country);
+        if (borders.find("Mediterranean Sea")!= borders.end()) {
+            cout << country << " borders the Mediterranean Sea." << endl;
+        } else {
+            cout << country << " does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << country << " is not a recognized country." << endl;
+    }
+
+    return 0;
+}
+
+In this program, we first define a map called countries that stores each country's name as a key and a set of its surrounding seas as the value. We use a set to store each sea name so that we can easily check if a country borders a certain sea.
+
+We then present the user with a prompt to enter the name of a country. We use a while loop to ensure that the user enters a valid country name. We check if the country is in the map, and if so, we retrieve its bordering seas from the map.
+
+Finally, we check if the Mediterranean Sea is among the set of borders. If it is, we inform the user that the country borders the Mediterranean Sea. If not, we inform the user that the country does not border the Mediterranean Sea.
+
+Rejected:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Sure, here is the program using the C++11 algorithm "cds::algorithm::GreaterEqual":
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <cctype>
+
+using namespace std;
+
+int main() {
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    std::vector<string> vec;
+    vec.push_back(country);
+    size_t index = std::find_if(vec.begin(), vec.end(), [](const string& s) {
+        return std::any_of(s.begin(), s.end(), [](const char& c) {
+            return c == '}}';
+    });
+    if (index!= vec.end()) {
+        if ((*index)[0] == 'M') {
+            cout << "Country is bordered by the Mediterranean Sea." << endl;
+        } else {
+            cout << "Country does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << "Country is not found." << endl;
+    }
+    return 0;
+}
+
+=== Regression Sample ===
+Decoded Text:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    if (endsWith(country, "Mediterranean")) {
+        cout << "Yes, the country " << country
+             << " borders the Mediterranean Sea.";
+    } else {
+        cout << "No, the country " << country
+             << " does not border the Mediterranean Sea.";
+    }
+    return 0;
+}
+Target Attributes:
+tensor([1., 1., 1., 2.])
+60917
+=== BT Sample ===
+Chosen:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Here's a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea:
+
+#include <iostream>
+#include <string>
+#include <set>
+#include <map>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    // store countries and their bordering seas in a map
+    map<string, set<string>> countries;
+    countries["Algeria"] = {"Mediterranean Sea", "North African Coast"};
+    countries["France"] = {"Mediterranean Sea", "English Channel"};
+    countries["Italy"] = {"Mediterranean Sea", "Adriatic Sea"};
+    countries["Malta"] = {"Mediterranean Sea", "North African Coast"};
+    countries["Spain"] = {"Mediterranean Sea", "Atlantic Ocean"};
+    countries["Tunisia"] = {"Mediterranean Sea", "North African Coast"};
+
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+
+    // check if country is in the map
+    if (countries.find(country)!= countries.end()) {
+        // check if country borders the Mediterranean Sea
+        set<string> borders = countries.at(country);
+        if (borders.find("Mediterranean Sea")!= borders.end()) {
+            cout << country << " borders the Mediterranean Sea." << endl;
+        } else {
+            cout << country << " does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << country << " is not a recognized country." << endl;
+    }
+
+    return 0;
+}
+
+In this program, we first define a map called countries that stores each country's name as a key and a set of its surrounding seas as the value. We use a set to store each sea name so that we can easily check if a country borders a certain sea.
+
+We then present the user with a prompt to enter the name of a country. We use a while loop to ensure that the user enters a valid country name. We check if the country is in the map, and if so, we retrieve its bordering seas from the map.
+
+Finally, we check if the Mediterranean Sea is among the set of borders. If it is, we inform the user that the country borders the Mediterranean Sea. If not, we inform the user that the country does not border the Mediterranean Sea.
+
+Rejected:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Sure, here is the program using the C++11 algorithm "cds::algorithm::GreaterEqual":
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <cctype>
+
+using namespace std;
+
+int main() {
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    std::vector<string> vec;
+    vec.push_back(country);
+    size_t index = std::find_if(vec.begin(), vec.end(), [](const string& s) {
+        return std::any_of(s.begin(), s.end(), [](const char& c) {
+            return c == '}}';
+    });
+    if (index!= vec.end()) {
+        if ((*index)[0] == 'M') {
+            cout << "Country is bordered by the Mediterranean Sea." << endl;
+        } else {
+            cout << "Country does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << "Country is not found." << endl;
+    }
+    return 0;
+}
+
+=== Regression Sample ===
+Decoded Text:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    if (endsWith(country, "Mediterranean")) {
+        cout << "Yes, the country " << country
+             << " borders the Mediterranean Sea.";
+    } else {
+        cout << "No, the country " << country
+             << " does not border the Mediterranean Sea.";
+    }
+    return 0;
+}
+Target Attributes:
+tensor([1., 1., 1., 2.])
+60917
+=== BT Sample ===
+Chosen:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Here's a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea:
+
+#include <iostream>
+#include <string>
+#include <set>
+#include <map>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    // store countries and their bordering seas in a map
+    map<string, set<string>> countries;
+    countries["Algeria"] = {"Mediterranean Sea", "North African Coast"};
+    countries["France"] = {"Mediterranean Sea", "English Channel"};
+    countries["Italy"] = {"Mediterranean Sea", "Adriatic Sea"};
+    countries["Malta"] = {"Mediterranean Sea", "North African Coast"};
+    countries["Spain"] = {"Mediterranean Sea", "Atlantic Ocean"};
+    countries["Tunisia"] = {"Mediterranean Sea", "North African Coast"};
+
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+
+    // check if country is in the map
+    if (countries.find(country)!= countries.end()) {
+        // check if country borders the Mediterranean Sea
+        set<string> borders = countries.at(country);
+        if (borders.find("Mediterranean Sea")!= borders.end()) {
+            cout << country << " borders the Mediterranean Sea." << endl;
+        } else {
+            cout << country << " does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << country << " is not a recognized country." << endl;
+    }
+
+    return 0;
+}
+
+In this program, we first define a map called countries that stores each country's name as a key and a set of its surrounding seas as the value. We use a set to store each sea name so that we can easily check if a country borders a certain sea.
+
+We then present the user with a prompt to enter the name of a country. We use a while loop to ensure that the user enters a valid country name. We check if the country is in the map, and if so, we retrieve its bordering seas from the map.
+
+Finally, we check if the Mediterranean Sea is among the set of borders. If it is, we inform the user that the country borders the Mediterranean Sea. If not, we inform the user that the country does not border the Mediterranean Sea.
+
+Rejected:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Sure, here is the program using the C++11 algorithm "cds::algorithm::GreaterEqual":
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <cctype>
+
+using namespace std;
+
+int main() {
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    std::vector<string> vec;
+    vec.push_back(country);
+    size_t index = std::find_if(vec.begin(), vec.end(), [](const string& s) {
+        return std::any_of(s.begin(), s.end(), [](const char& c) {
+            return c == '}}';
+    });
+    if (index!= vec.end()) {
+        if ((*index)[0] == 'M') {
+            cout << "Country is bordered by the Mediterranean Sea." << endl;
+        } else {
+            cout << "Country does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << "Country is not found." << endl;
+    }
+    return 0;
+}
+
+=== Regression Sample ===
+Decoded Text:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    if (endsWith(country, "Mediterranean")) {
+        cout << "Yes, the country " << country
+             << " borders the Mediterranean Sea.";
+    } else {
+        cout << "No, the country " << country
+             << " does not border the Mediterranean Sea.";
+    }
+    return 0;
+}
+Target Attributes:
+tensor([1., 1., 1., 2.])
+60917
+=== BT Sample ===
+Chosen:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Here's a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea:
+
+#include <iostream>
+#include <string>
+#include <set>
+#include <map>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    // store countries and their bordering seas in a map
+    map<string, set<string>> countries;
+    countries["Algeria"] = {"Mediterranean Sea", "North African Coast"};
+    countries["France"] = {"Mediterranean Sea", "English Channel"};
+    countries["Italy"] = {"Mediterranean Sea", "Adriatic Sea"};
+    countries["Malta"] = {"Mediterranean Sea", "North African Coast"};
+    countries["Spain"] = {"Mediterranean Sea", "Atlantic Ocean"};
+    countries["Tunisia"] = {"Mediterranean Sea", "North African Coast"};
+
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+
+    // check if country is in the map
+    if (countries.find(country)!= countries.end()) {
+        // check if country borders the Mediterranean Sea
+        set<string> borders = countries.at(country);
+        if (borders.find("Mediterranean Sea")!= borders.end()) {
+            cout << country << " borders the Mediterranean Sea." << endl;
+        } else {
+            cout << country << " does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << country << " is not a recognized country." << endl;
+    }
+
+    return 0;
+}
+
+In this program, we first define a map called countries that stores each country's name as a key and a set of its surrounding seas as the value. We use a set to store each sea name so that we can easily check if a country borders a certain sea.
+
+We then present the user with a prompt to enter the name of a country. We use a while loop to ensure that the user enters a valid country name. We check if the country is in the map, and if so, we retrieve its bordering seas from the map.
+
+Finally, we check if the Mediterranean Sea is among the set of borders. If it is, we inform the user that the country borders the Mediterranean Sea. If not, we inform the user that the country does not border the Mediterranean Sea.
+
+Rejected:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Sure, here is the program using the C++11 algorithm "cds::algorithm::GreaterEqual":
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <cctype>
+
+using namespace std;
+
+int main() {
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    std::vector<string> vec;
+    vec.push_back(country);
+    size_t index = std::find_if(vec.begin(), vec.end(), [](const string& s) {
+        return std::any_of(s.begin(), s.end(), [](const char& c) {
+            return c == '}}';
+    });
+    if (index!= vec.end()) {
+        if ((*index)[0] == 'M') {
+            cout << "Country is bordered by the Mediterranean Sea." << endl;
+        } else {
+            cout << "Country does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << "Country is not found." << endl;
+    }
+    return 0;
+}
+
+=== Regression Sample ===
+Decoded Text:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    if (endsWith(country, "Mediterranean")) {
+        cout << "Yes, the country " << country
+             << " borders the Mediterranean Sea.";
+    } else {
+        cout << "No, the country " << country
+             << " does not border the Mediterranean Sea.";
+    }
+    return 0;
+}
+Target Attributes:
+tensor([1., 1., 1., 2.])
+60917
+=== BT Sample ===
+Chosen:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Here's a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea:
+
+#include <iostream>
+#include <string>
+#include <set>
+#include <map>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    // store countries and their bordering seas in a map
+    map<string, set<string>> countries;
+    countries["Algeria"] = {"Mediterranean Sea", "North African Coast"};
+    countries["France"] = {"Mediterranean Sea", "English Channel"};
+    countries["Italy"] = {"Mediterranean Sea", "Adriatic Sea"};
+    countries["Malta"] = {"Mediterranean Sea", "North African Coast"};
+    countries["Spain"] = {"Mediterranean Sea", "Atlantic Ocean"};
+    countries["Tunisia"] = {"Mediterranean Sea", "North African Coast"};
+
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+
+    // check if country is in the map
+    if (countries.find(country)!= countries.end()) {
+        // check if country borders the Mediterranean Sea
+        set<string> borders = countries.at(country);
+        if (borders.find("Mediterranean Sea")!= borders.end()) {
+            cout << country << " borders the Mediterranean Sea." << endl;
+        } else {
+            cout << country << " does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << country << " is not a recognized country." << endl;
+    }
+
+    return 0;
+}
+
+In this program, we first define a map called countries that stores each country's name as a key and a set of its surrounding seas as the value. We use a set to store each sea name so that we can easily check if a country borders a certain sea.
+
+We then present the user with a prompt to enter the name of a country. We use a while loop to ensure that the user enters a valid country name. We check if the country is in the map, and if so, we retrieve its bordering seas from the map.
+
+Finally, we check if the Mediterranean Sea is among the set of borders. If it is, we inform the user that the country borders the Mediterranean Sea. If not, we inform the user that the country does not border the Mediterranean Sea.
+
+Rejected:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Sure, here is the program using the C++11 algorithm "cds::algorithm::GreaterEqual":
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <cctype>
+
+using namespace std;
+
+int main() {
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    std::vector<string> vec;
+    vec.push_back(country);
+    size_t index = std::find_if(vec.begin(), vec.end(), [](const string& s) {
+        return std::any_of(s.begin(), s.end(), [](const char& c) {
+            return c == '}}';
+    });
+    if (index!= vec.end()) {
+        if ((*index)[0] == 'M') {
+            cout << "Country is bordered by the Mediterranean Sea." << endl;
+        } else {
+            cout << "Country does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << "Country is not found." << endl;
+    }
+    return 0;
+}
+
+=== Regression Sample ===
+Decoded Text:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    if (endsWith(country, "Mediterranean")) {
+        cout << "Yes, the country " << country
+             << " borders the Mediterranean Sea.";
+    } else {
+        cout << "No, the country " << country
+             << " does not border the Mediterranean Sea.";
+    }
+    return 0;
+}
+Target Attributes:
+tensor([1., 1., 1., 2.])
+60917
+=== BT Sample ===
+Chosen:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Here's a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea:
+
+#include <iostream>
+#include <string>
+#include <set>
+#include <map>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    // store countries and their bordering seas in a map
+    map<string, set<string>> countries;
+    countries["Algeria"] = {"Mediterranean Sea", "North African Coast"};
+    countries["France"] = {"Mediterranean Sea", "English Channel"};
+    countries["Italy"] = {"Mediterranean Sea", "Adriatic Sea"};
+    countries["Malta"] = {"Mediterranean Sea", "North African Coast"};
+    countries["Spain"] = {"Mediterranean Sea", "Atlantic Ocean"};
+    countries["Tunisia"] = {"Mediterranean Sea", "North African Coast"};
+
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+
+    // check if country is in the map
+    if (countries.find(country)!= countries.end()) {
+        // check if country borders the Mediterranean Sea
+        set<string> borders = countries.at(country);
+        if (borders.find("Mediterranean Sea")!= borders.end()) {
+            cout << country << " borders the Mediterranean Sea." << endl;
+        } else {
+            cout << country << " does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << country << " is not a recognized country." << endl;
+    }
+
+    return 0;
+}
+
+In this program, we first define a map called countries that stores each country's name as a key and a set of its surrounding seas as the value. We use a set to store each sea name so that we can easily check if a country borders a certain sea.
+
+We then present the user with a prompt to enter the name of a country. We use a while loop to ensure that the user enters a valid country name. We check if the country is in the map, and if so, we retrieve its bordering seas from the map.
+
+Finally, we check if the Mediterranean Sea is among the set of borders. If it is, we inform the user that the country borders the Mediterranean Sea. If not, we inform the user that the country does not border the Mediterranean Sea.
+
+Rejected:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Sure, here is the program using the C++11 algorithm "cds::algorithm::GreaterEqual":
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <cctype>
+
+using namespace std;
+
+int main() {
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    std::vector<string> vec;
+    vec.push_back(country);
+    size_t index = std::find_if(vec.begin(), vec.end(), [](const string& s) {
+        return std::any_of(s.begin(), s.end(), [](const char& c) {
+            return c == '}}';
+    });
+    if (index!= vec.end()) {
+        if ((*index)[0] == 'M') {
+            cout << "Country is bordered by the Mediterranean Sea." << endl;
+        } else {
+            cout << "Country does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << "Country is not found." << endl;
+    }
+    return 0;
+}
+
+=== Regression Sample ===
+Decoded Text:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    if (endsWith(country, "Mediterranean")) {
+        cout << "Yes, the country " << country
+             << " borders the Mediterranean Sea.";
+    } else {
+        cout << "No, the country " << country
+             << " does not border the Mediterranean Sea.";
+    }
+    return 0;
+}
+Target Attributes:
+tensor([1., 1., 1., 2.])
+60917
+=== BT Sample ===
+Chosen:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Here's a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea:
+
+#include <iostream>
+#include <string>
+#include <set>
+#include <map>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    // store countries and their bordering seas in a map
+    map<string, set<string>> countries;
+    countries["Algeria"] = {"Mediterranean Sea", "North African Coast"};
+    countries["France"] = {"Mediterranean Sea", "English Channel"};
+    countries["Italy"] = {"Mediterranean Sea", "Adriatic Sea"};
+    countries["Malta"] = {"Mediterranean Sea", "North African Coast"};
+    countries["Spain"] = {"Mediterranean Sea", "Atlantic Ocean"};
+    countries["Tunisia"] = {"Mediterranean Sea", "North African Coast"};
+
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+
+    // check if country is in the map
+    if (countries.find(country)!= countries.end()) {
+        // check if country borders the Mediterranean Sea
+        set<string> borders = countries.at(country);
+        if (borders.find("Mediterranean Sea")!= borders.end()) {
+            cout << country << " borders the Mediterranean Sea." << endl;
+        } else {
+            cout << country << " does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << country << " is not a recognized country." << endl;
+    }
+
+    return 0;
+}
+
+In this program, we first define a map called countries that stores each country's name as a key and a set of its surrounding seas as the value. We use a set to store each sea name so that we can easily check if a country borders a certain sea.
+
+We then present the user with a prompt to enter the name of a country. We use a while loop to ensure that the user enters a valid country name. We check if the country is in the map, and if so, we retrieve its bordering seas from the map.
+
+Finally, we check if the Mediterranean Sea is among the set of borders. If it is, we inform the user that the country borders the Mediterranean Sea. If not, we inform the user that the country does not border the Mediterranean Sea.
+
+Rejected:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} Sure, here is the program using the C++11 algorithm "cds::algorithm::GreaterEqual":
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <cctype>
+
+using namespace std;
+
+int main() {
+    string country;
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    std::vector<string> vec;
+    vec.push_back(country);
+    size_t index = std::find_if(vec.begin(), vec.end(), [](const string& s) {
+        return std::any_of(s.begin(), s.end(), [](const char& c) {
+            return c == '}}';
+    });
+    if (index!= vec.end()) {
+        if ((*index)[0] == 'M') {
+            cout << "Country is bordered by the Mediterranean Sea." << endl;
+        } else {
+            cout << "Country does not border the Mediterranean Sea." << endl;
+        }
+    } else {
+        cout << "Country is not found." << endl;
+    }
+    return 0;
+}
+
+=== Regression Sample ===
+Decoded Text:
+Can you write a C++ program that prompts the user to enter the name of a country and checks if it borders the Mediterranean Sea? Here's some starter code to help you out:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    // [C++ code]
+    return 0;
+} int main() {
+    string country;
+    // prompt user for input
+    cout << "Enter the name of a country: ";
+    cin >> country;
+    // check if country borders the Mediterranean Sea
+    if (endsWith(country, "Mediterranean")) {
+        cout << "Yes, the country " << country
+             << " borders the Mediterranean Sea.";
+    } else {
+        cout << "No, the country " << country
+             << " does not border the Mediterranean Sea.";
+    }
+    return 0;
+}
+Target Attributes:
+tensor([1., 1., 1., 2.])
+trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0
+trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0
+training start
+trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0
+trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0
+
+training start
+trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0
+training start
+trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0
+trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0
+training start
+trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0
+trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0
+training start
+trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0
+trainable params: 3212768256 || all params: 3212768256 || trainable%: 100.0
+training start
